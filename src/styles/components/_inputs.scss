@@ -1,0 +1,26 @@
+.text-input {
+    border: 1px solid #cacccd;
+    height: 50px;
+    font-size: $font-size-large;
+    font-weight: 300;
+    padding: $s-size;    
+}
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+    display: none;
+}
+.select {
+    @extend .text-input;
+    background: transparent;
+    outline: none;
+}
+.textarea {
+    @extend .text-input;
+}
